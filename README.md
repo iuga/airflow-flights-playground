@@ -1,2 +1,2 @@
-# airflow-flights-playground
+# Airflow: Real-time Flights
 Airflow ETL for Flights Information

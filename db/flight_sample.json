@@ -1,0 +1,53 @@
+{
+    'flight_date': '2021-02-23',
+    'flight_status': 'scheduled',
+    'departure': {
+        'airport': 'Zhengzhou',
+        'timezone': 'Asia/Shanghai',
+        'iata': 'CGO',
+        'icao': 'ZHCC',
+        'terminal': '2',
+        'gate': '228',
+        'delay': None,
+        'scheduled': '2021-02-23T08: 10: 00+00: 00',
+        'estimated': '2021-02-23T08: 10: 00+00: 00',
+        'actual': None,
+        'estimated_runway': None,
+        'actual_runway': None
+    },
+    'arrival': {
+        'airport': 'Nanning',
+        'timezone': 'Asia/Shanghai',
+        'iata': 'NNG',
+        'icao': 'ZGNN',
+        'terminal': 'T2',
+        'gate': None,
+        'baggage': None,
+        'delay': None,
+        'scheduled': '2021-02-23T11: 10: 00+00: 00',
+        'estimated': '2021-02-23T11: 10: 00+00: 00',
+        'actual': None,
+        'estimated_runway': None,
+        'actual_runway': None
+    },
+    'airline': {
+        'name': 'Air China LTD',
+        'iata': 'CA',
+        'icao': 'CCA'
+    },
+    'flight': {
+        'number': '3579',
+        'iata': 'CA3579',
+        'icao': 'CCA3579',
+        'codeshared': {
+            'airline_name': 'shenzhen airlines',
+            'airline_iata': 'zh',
+            'airline_icao': 'csz',
+            'flight_number': '8377',
+            'flight_iata': 'zh8377',
+            'flight_icao': 'csz8377'
+        }
+    },
+    'aircraft': None,
+    'live': None
+}
