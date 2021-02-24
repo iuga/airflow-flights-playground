@@ -9,6 +9,9 @@ help:
 	@echo '  deploy    	deploy the project'
 	@echo ''
 
+local-database:
+	docker exec -it airflow-flights-playground_mysql-datalake_1 mysql datalake --user=fligoo --password=fligoo
+
 local-build:
 	docker-compose build
 
