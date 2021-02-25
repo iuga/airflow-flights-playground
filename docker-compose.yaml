@@ -49,6 +49,8 @@ x-airflow-common:
     AIRFLOW__CORE__FERNET_KEY: ''
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+    AIRFLOW_CONN_MYSQL_DEFAULT: mysql://fligoo:fligoo@mysql-datalake:3306/datalake?local_infile=1
+    AIRFLOW_CONN_AWS_DEFAULT: s3://
   volumes:
     - ./dags:/opt/airflow/dags
     - ./logs:/opt/airflow/logs
@@ -81,6 +83,7 @@ services:
   mysql-datalake:
     image: mysql:8
     hostname: datalake_mysql
+    command: --default-authentication-plugin=mysql_native_password --local-infile=1
     environment:
       - MYSQL_USER=fligoo
       - MYSQL_ROOT_PASSWORD=fligoo
